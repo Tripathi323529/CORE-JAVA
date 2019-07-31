@@ -1,0 +1,25 @@
+Name-Akash Tripathi
+Print the series
+
+3 5 8 12 17 23 30 38
+==========================================================================================================================
+package Assignment;
+
+public class series15 {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int s=3;
+		System.out.print("Pattern is: " + s + " ");
+		for(int i=2;i<10;i++){
+			s=s+i;
+			System.out.print( s + " ");
+			
+		}
+
+	}
+
+}

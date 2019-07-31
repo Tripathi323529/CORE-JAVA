@@ -1,0 +1,49 @@
+Name-Akash Tripathi
+Demo Assignment-Student
+===========================================================================================================================
+package Pri;
+import java.util.*;
+
+class Student{
+		String name;
+		float maths;
+		float english;
+		float avg;
+	public void input(){
+		Scanner input = new Scanner(System. in);
+		System. out. print("Enter an marks: ");
+		maths = input. nextInt();
+		english= input.nextInt();
+		avg=(maths+english)/2.0f;
+		
+	}
+	public void displaydetails(){
+		System.out.println("Name and avg marks are =" + name + " " + avg);
+	}
+	}
+---------------------------------------------------------------------------------------------------------------------------
+package Pri;
+
+import java.util.Scanner;
+
+public class college {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Student akash= new Student();
+		Student ravi= new Student();
+		akash.name="Akash";
+		akash.input();
+		ravi.name="Ravi";
+		ravi.input();
+		if(akash.avg>ravi.avg)
+			akash.displaydetails();
+		else
+			ravi.displaydetails();
+
+	}
+
+}

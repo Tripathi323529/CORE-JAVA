@@ -1,0 +1,25 @@
+Name-Akash Tripathi
+Demo Assignment-arraylist
+============================================================================================================================
+package File1;
+
+import java.util.ArrayList;
+
+public class arraylist {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ArrayList<String> al= new ArrayList<String>();
+		al.add("Sanjay");
+		al.add("Sumit");
+		System.out.println(al);
+		for(String s: al){
+			System.out.println(s);
+		}
+
+	}
+
+}

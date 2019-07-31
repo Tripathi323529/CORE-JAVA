@@ -1,0 +1,58 @@
+Name-Akash Tripathi
+Demo Assignment-parentclass
+===========================================================================================================================
+package File;
+
+public class parentclass {
+private int a=10;
+int b=20;
+protected int c=30;
+public int d=40;
+
+public void display(){
+	System.out.println(a);
+}
+
+}
+---------------------------------------------------------------------------------------------------------------------------
+package File1;
+
+import File.parentclass;
+
+public class childclass_2 extends parentclass{
+	public void details(){
+		//System.out.println(a);
+		//System.out.println(b);
+		System.out.println(c);
+		System.out.println(d);
+		
+	}
+	
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
+---------------------------------------------------------------------------------------------------------------------------
+package File1;
+
+import File.childclass_1;
+
+public class testclass {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		childclass_2 c= new childclass_2();
+		c.details();
+
+	}
+
+}

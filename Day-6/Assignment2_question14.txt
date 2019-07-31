@@ -1,0 +1,23 @@
+Name-Akash Tripathi
+Add all the numbers divisible by both 7 & 11 in the range 0 to 200.
+===========================================================================================================================
+package Assignment;
+
+public class question14 {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int sum=0;
+		for(int i=1;i<200;i++){
+			if((i%7==0) && (i%11==0) ){
+				sum=sum+i;
+			}
+		}
+		System.out.println(sum);
+
+	}
+
+}

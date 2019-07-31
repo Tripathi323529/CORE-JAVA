@@ -1,0 +1,26 @@
+Nmae-Akash Tripathi
+ Print sum of numbers divisible by 7 between 15 & 75 using while loop. 
+===========================================================================================================================
+package Pri;
+
+public class divisible7 {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int i=15,sum=0;
+		while(i<75){
+			if(i%7==0){
+				sum=sum+i;
+			}
+			i++;
+			
+			
+		}
+		System.out.println(sum);
+			
+		}
+
+	}

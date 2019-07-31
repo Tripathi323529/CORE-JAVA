@@ -1,0 +1,46 @@
+Name-Akash Tripathi
+Demo Assignment-accountant
+===========================================================================================================================
+package Pri;
+
+public class account1 {
+	int accountno;
+	float accountbal;
+	float int_rate;
+	
+	public account1(int accountno){
+		this.accountno = accountno;
+	}
+	public account1(int accountno,float accountbal,float int_rate){
+		this.accountno= accountno;
+		this.accountbal = accountbal;
+		this.int_rate = int_rate;
+	}
+	public String get_account_det(){
+		String str= "Account number :" + accountno + "\n" + "Account Balance :" + accountbal + "\n" + "Interest Rate: " + int_rate;
+		return str;
+	}
+	public float calculateInterest(float amt){
+		return amt + int_rate/100;
+	}
+
+
+}
+----------------------------------------------------------------------------------------------------------------------------
+package Pri;
+
+public class test_sb_acc1 {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		account1 sbacc1= new account1(32765);
+		account1 sbacc2 = new account1(34562,1000,9);
+		System.out.println(sbacc1.get_account_det());
+		System.out.println(sbacc2.get_account_det());
+
+	}
+
+}

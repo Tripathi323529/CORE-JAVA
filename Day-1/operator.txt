@@ -1,0 +1,38 @@
+Name-Akash Tripathi
+Demo Assignment-Operator
+===========================================================================================================================
+package Pri;
+
+public class Operator {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int a=32, x, y;
+		x= a/10;
+		System.out.println(x);
+		y= a%10;
+		System.out.println(y);
+		
+		float m=42.076f, n, p;
+		n=m/10;
+		p=m%10;
+		System.out.println(n);
+		System.out.println(p);
+		
+		int c=5, d=10 , o=20;
+		System.out.println((c>d)&& (c>o));
+		System.out.println((c>d)|| (c>o));
+		
+		
+		
+		
+		
+		
+		
+
+	}
+
+}

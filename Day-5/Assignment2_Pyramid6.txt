@@ -1,0 +1,29 @@
+Name-Akash Tripathi
+Pyramid
+      1
+    2 2
+  3 3 3
+4 4 4 4
+===========================================================================================================================
+package Pri;
+
+public class Pattern {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		for(int j=1;j<=4;j++){
+			for(int l=1;l<=4-j;l++){
+				System.out.print(" ");
+			}
+			for(int i=1;i<=j;i++){
+				System.out.print(j);
+			}
+			System.out.println();
+		}
+
+	}
+
+}

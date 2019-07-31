@@ -1,0 +1,43 @@
+Name-Akash Tripathi
+Demo Assignment-Oops
+===========================================================================================================================
+package Pri;
+
+public class Oops {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		mobile smg= new mobile();
+		smg.color="black";
+		smg.len=6;
+		smg.breadth=6;
+		smg.brand="Samsung";
+		smg.call();
+		smg.msg();
+		smg.display();
+		
+
+	}
+
+}
+class mobile {
+	String color;
+	float len;
+	float breadth;
+	String brand;
+public void call(){
+	System.out.println("Mobile is calling");
+}
+public void msg(){
+	System.out.println("Mobile is messaging");
+}
+public void display(){
+	System.out.println("color = " +color);
+	System.out.println("length = " +len);
+	System.out.println("breadth =" +breadth);
+	System.out.println("Brand =" +brand);
+}
+}

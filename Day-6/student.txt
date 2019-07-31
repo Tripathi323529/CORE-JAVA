@@ -1,0 +1,25 @@
+Name-Akash Tripathi
+Demo Assignment-student
+===========================================================================================================================
+package File1;
+
+public class student {
+	public int stdid;
+	public String name;
+	public int phy;
+	public int chem;
+	public float avg;
+	public float avg(){
+		avg=(phy+chem)/2f;
+		return avg;
+		
+	}
+	public student(int stdid,String name, int phy, int chem){
+		this.stdid=stdid;
+		this.name=name;
+		this.phy=phy;
+		this.chem=chem;
+		this.avg=avg();
+	}
+
+}

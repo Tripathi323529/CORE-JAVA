@@ -1,0 +1,130 @@
+Name-Akash Tripathi
+demo Assignment
+============================================================================================================================
+package Exe;
+
+public class Student1 {
+	int Sid;
+	String Sname;
+	int java;
+	int selenium;
+	double avg;
+	String grade;
+	
+
+}
+----------------------------------------------------------------------------------------------------------------------------
+package Exe;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.util.ArrayList;
+
+import org.apache.poi.xssf.usermodel.XSSFCell;
+import org.apache.poi.xssf.usermodel.XSSFRow;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+public class Excel {
+
+	/**
+	 * @param args
+	 * 
+	 */
+	public static void read_excel(ArrayList<Student1> arr)
+	{
+		
+		for(int x=1;x<=3;x++)
+		{
+			Student1 s=new Student1();
+			for(int y=0;y<=3;y++)
+			{
+			try
+				{
+					File f=new File("D:\\StudentData.xlsx");
+					FileInputStream fis=new FileInputStream(f);
+					XSSFWorkbook wb=new XSSFWorkbook(fis);
+					XSSFSheet sh=wb.getSheet("Sheet1");
+					XSSFRow rw=sh.getRow(x);
+					XSSFCell cell=rw.getCell(y);
+					if(y==0)
+					{
+						s.Sid=(int) cell.getNumericCellValue();
+						//System.out.println(s.Sid);
+					}
+					if(y==2)
+					{
+						s.java=(int) cell.getNumericCellValue();
+						//System.out.println(s.java);
+					}
+					if(y==3)
+					{
+						s.selenium=(int) cell.getNumericCellValue();
+					//	System.out.println(s.selenium);
+					}
+					
+					else
+					{
+						s.Sname=cell.getStringCellValue();
+						//System.out.println(s.Sname);
+					}
+					s.avg=(s.java+s.selenium)/2.0;
+					if(s.avg<=35)
+						s.grade="Pass";
+					else if(s.avg<=50)
+						s.grade="Second class";
+					else if(s.avg<=60)
+						s.grade="First class";
+					else
+						s.grade="First class distinction";
+					
+				}
+				catch (Exception e) {
+					// TODO Auto-generated catch block
+					//e.printStackTrace()
+				}
+			}
+			arr.add(s);
+		}	
+
+		}
+		public static void write_excel(ArrayList<Student1> arr)
+		{
+		int x=1;
+			for(Student1 s2:arr)
+			try {
+				File f1=new File("D:\\StudentData.xlsx");
+				FileInputStream fis1=new FileInputStream(f1);
+				XSSFWorkbook wb=new XSSFWorkbook(fis1);
+				XSSFSheet sh=wb.getSheet("Sheet1");
+				XSSFRow row1=sh.getRow(x);
+				XSSFCell cell=row1.createCell(4);
+				cell.setCellValue(s2.avg);
+				FileOutputStream fos=new FileOutputStream(f1);
+				wb.write(fos);
+				XSSFCell cell1=row1.createCell(5);
+				cell1.setCellValue(s2.grade);
+				//Done for overwriting
+				FileOutputStream fos1=new FileOutputStream(f1);
+				//cell.setCellValue("NOIDA");
+				wb.write(fos1);
+				x++;
+				
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				//e.printStackTrace();
+			}
+		}
+	
+
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ArrayList<Student1> arr=new ArrayList<>();
+			read_excel(arr);
+			write_excel(arr);
+	}	
+	
+
+}

@@ -1,0 +1,30 @@
+Name-Akash Tripathi
+From the below single dimensional array, find & print the two numbers, whose sum is equal to 65.
+int m[]={21,15,34,91,59,16,44}
+Output:
+The sum of 21 & 44 = 65
+===========================================================================================================================
+package Pri;
+
+public class Array {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int m[]={21,15,34,91,59,16,44},sum=0;
+		for(int i=0;i<=6;i++){
+			for(int j=0;j<=i-1;j++){
+				
+				if(m[i] + m[j]==65){
+					System.out.print(m[i]+ " ");
+					System.out.print(m[j]);
+				}
+				System.out.print(" ");
+					
+				}
+
+}
+		}
+}

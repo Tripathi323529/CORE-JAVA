@@ -1,0 +1,34 @@
+Name-Akash Tripathi
+In a given number, calculate the sum of all the digits that are greater than 5. 
+num = 59138
+sum = 17
+===========================================================================================================================
+package Pri;
+
+import java.util.Scanner;
+
+public class sumdigit {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input = new Scanner(System. in);
+		System. out. print("Enter an integer: ");
+		
+	    int n = input. nextInt();
+	    int sum=0,o,remainder,result=0;
+	    o=n;
+	    while(o!=0){
+	    	remainder=o%10;
+	    	if(remainder>5){
+	    		sum=sum+remainder;
+	    	}
+	    	o/=10;
+	    }
+	    System.out.println(sum);
+
+	}
+
+}

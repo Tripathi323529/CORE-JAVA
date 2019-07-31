@@ -1,0 +1,36 @@
+Name-Akash Tripathi
+Demo Assignment-Polymorphism
+============================================================================================================================
+package Pri;
+
+public class Polymorphism {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		poly calc= new poly();
+		System.out.println("Addition of two numbers :" + calc.add(5,3));
+		System.out.println("Addition of three number :" + calc.add(5,4,6));
+
+	}
+
+}
+
+class poly{
+	int x;
+	int y;
+	int z;
+	
+	int add(int x, int y){
+		z=x+y;
+		return z;
+	}
+	int add(int x, int y, int z){
+		int m= x+y+z;
+		return m;
+	}
+	
+	}
+

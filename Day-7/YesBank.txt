@@ -1,0 +1,88 @@
+Name-Akash Tripathi
+Demo Assignment
+===========================================================================================================================
+package YesBank;
+
+import java.util.Scanner;
+
+public abstract class Account {
+	int accountno;
+	float accountbal;
+	String accountname;
+	String acc_type;
+	float int_rate;
+	int days;
+	public Account(int accountno,float accountbal,String accountname ){
+		this.accountno=accountno;
+		this.accountbal=accountbal;
+		this.accountname=accountname;
+	}
+	public float calculateinterest(float int_rate,int days){
+		return accountbal=accountbal + (int_rate/(100*365))*days*accountbal;
+		
+		
+	}
+	
+	
+
+}
+---------------------------------------------------------------------------------------------------------------------------
+package YesBank;
+
+public class SBAccount extends Account {
+    int depositent;
+	public SBAccount(int accountno, float accountbal, String accountname) {
+		super(accountno, accountbal, accountname);
+		this.depositent=depositent;
+		// TODO Auto-generated constructor stub
+	}
+	public void deposit(float depositent){
+		accountbal = accountbal + depositent;
+	}
+	
+
+}
+---------------------------------------------------------------------------------------------------------------------------
+package YesBank;
+
+public class FDAccount extends Account {
+	int depositent;
+
+	public FDAccount(int accountno, float accountbal, String accountname) {
+		super(accountno, accountbal, accountname);
+		// TODO Auto-generated constructor stub
+		this.depositent=depositent;
+	}
+	public void deposit(float depositent){
+		accountbal = accountbal + depositent;
+	}
+	//calculate maturity account in this which contain + calc_interest calling
+
+}
+----------------------------------------------------------------------------------------------------------------------------
+package YesBank;
+
+public class Test_account {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		SBAccount sba=new SBAccount(134562, 10000,"Ram");
+		SBAccount sba1=new SBAccount(345562, 10000,"Shyam");
+		FDAccount fda=new FDAccount(234356,10000,"Prashant");
+		sba.deposit(25000);
+		sba.calculateinterest(4,365);
+		sba1.deposit(35000);
+		sba1.calculateinterest(4,365);
+		fda.deposit(20000);
+		fda.calculateinterest(6,365);
+		System.out.println("Ram account_bal := " + sba.accountbal);
+		System.out.println("Shyam account_bal := " + sba1.accountbal);
+		System.out.println("Prashant account_bal := " + fda.accountbal);
+		
+
+	}
+
+}

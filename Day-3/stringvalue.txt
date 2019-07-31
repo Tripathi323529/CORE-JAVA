@@ -1,0 +1,29 @@
+Name-Akash Tripathi
+Demo Assignment-stringvalue
+===========================================================================================================================
+package Pri;
+
+public class string1 {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String s= "I am Learning Java";
+		int p=0,i=0,c=0;
+		while(p!=-1){
+			p=s.indexOf(" ",i);
+			if(p==-1){
+				System.out.println(s.substring(i,s.length()));
+				break;
+			}
+			System.out.println(s.substring(i,p));
+			i=p+1;
+			c++;
+		
+		}
+
+	}
+
+}

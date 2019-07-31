@@ -1,0 +1,123 @@
+Name-Akash Tripathi
+Demo Assignment-employee
+===========================================================================================================================
+package File1;
+public abstract class employee {
+	 int eid;
+	 String e_name;
+	 int rateperunit;
+public abstract int calc_monthly_salary();
+		 //constructor below
+		 
+	  employee(int eid, String e_name, int rateperunit){
+		 this.eid=eid;
+		 this.e_name=e_name;
+		 this.rateperunit= rateperunit;
+		 
+	 }
+	
+
+	public int getEid() {
+		return eid;
+	}
+
+
+	public void setEid(int eid) {
+		this.eid = eid;
+	}
+
+
+	public String getE_name() {
+		return e_name;
+	}
+
+
+	public void setE_name(String e_name) {
+		this.e_name = e_name;
+	}
+
+
+	public int getRoi() {
+		return rateperunit;
+	}
+
+
+	public void setRoi(int roi) {
+		this.rateperunit = rateperunit;
+	}
+	
+
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
+---------------------------------------------------------------------------------------------------------------------------
+package File1;
+
+public  class consultant extends employee{
+	int total_hrs_worked;
+	public consultant(int total_hrs_worked ,int eid, String e_name, int roi) {
+		
+		//super used to call the constructor of parent class
+		super(eid, e_name, roi);
+		this.total_hrs_worked=total_hrs_worked;
+		// TODO Auto-generated constructor stub
+	}
+	
+	public int calc_monthly_salary(){
+		int sal;
+		sal=total_hrs_worked * rateperunit;
+		return sal;
+		
+	}
+	
+	
+
+}
+---------------------------------------------------------------------------------------------------------------------------
+package File1;
+
+public class fte extends employee {
+	fte(int totaldaysworked ,int eid, String e_name, int rateperunit) {
+		super(eid, e_name, rateperunit);
+		this.totaldaysworked=totaldaysworked;
+		// TODO Auto-generated constructor stub
+	}
+	int totaldaysworked;
+	public int calc_monthly_salary(){
+		int sal;
+		sal=totaldaysworked * rateperunit;
+		return sal;
+		
+	}
+
+}
+---------------------------------------------------------------------------------------------------------------------------
+package File1;
+
+public class testvalue {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//consultant c= new consultant(6,32, "Akki",40);
+		
+		consultant c1 = new consultant(6,32, "Akki",40);
+		fte f= new fte(30,324356,"akku",50);
+		System.out.println("Salary of: " + c1.getE_name() + " is " + c1.calc_monthly_salary());
+		System.out.println("Salary of: " + f.getE_name() + " is " + f.calc_monthly_salary() );
+		
+		
+		
+
+	}
+
+}

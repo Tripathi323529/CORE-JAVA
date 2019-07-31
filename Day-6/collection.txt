@@ -1,0 +1,39 @@
+Name-Akash Tripathi
+Demo Assignment-collection
+===========================================================================================================================
+package File1;
+
+import java.util.ArrayList;
+
+public class collection {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ArrayList<student> semester= new ArrayList<student>();
+		
+		student ramesh= new student(102,"Ramesh",81,91);
+		student rakesh= new student(101,"Rakesh",82,92);
+		student seema= new student(103,"Seema",83,94);
+		student priya= new student(104,"Priya",95,98);
+		collection ex= new collection();
+		
+		semester.add(ramesh);
+		semester.add(rakesh);
+		semester.add(seema);
+		ex.display(semester);
+	}
+	public void display(student s){
+		System.out.println("ID :" + s.stdid + "\n" + "Name : " + s.name + "\n" + "Physics : " + s.phy + "\n" + "Chemistry: " + s.chem + "\n" + "Average: " + s.avg);
+		
+	}
+	public void display(ArrayList<student> std){
+		for(student s: std){
+			System.out.println("ID :" + s.stdid + "\n" + "Name : " + s.name + "\n" + "Physics : " + s.phy + "\n" + "Chemistry: " + s.chem + "\n" + "Average: " + s.avg);
+			
+		}
+	}
+
+}

@@ -1,0 +1,35 @@
+Name-Akash Tripathi
+Demo Assignment-Exception1
+============================================================================================================================
+package File1;
+
+public class Exception1 {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		try
+		{
+		int a=10,b,c=0;
+		b=a/c;
+		System.out.println(b);
+		int[] m= {12,23,34,45,56};
+		System.out.println(m[4]);
+		System.out.println(m[5]);
+		System.out.println("Hi");
+		}
+		catch(ArithmeticException e){
+			System.out.println("There is bound exception");
+		}
+		catch(ArrayIndexOutOfBoundsException ae){
+			System.out.println("There will be end");
+			
+		}
+		System.out.println("Best in world");
+		
+
+	}
+
+}

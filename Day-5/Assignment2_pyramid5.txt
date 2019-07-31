@@ -1,0 +1,27 @@
+Name-Akash Tripathi
+Pyramid
+5 5 5 5 5
+4 4 4 4
+3 3 3 
+2 2
+1
+===========================================================================================================================
+package Assignment;
+
+public class pyramid5 {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		for(int i=1;i<=6;i++){
+			for(int j=1;j<=6-i;j++){
+				System.out.print(6-i + " ");
+			}
+			System.out.println();
+		}
+
+	}
+
+}

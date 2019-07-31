@@ -1,0 +1,27 @@
+Name-Akash Tripathi
+Demo Assignment-For Loop
+===========================================================================================================================
+package Pri;
+
+public class For {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int sum=0;
+		for(int i=10;i<=30;i++){
+			int rem = i%3;
+			if(rem ==0){
+				System.out.println(i);
+				sum= sum+i;
+				
+			}
+		}
+
+
+	}
+
+}
+

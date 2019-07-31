@@ -1,0 +1,33 @@
+Name-Akash Tripathi
+Demo Assignment-string
+===========================================================================================================================
+package Pri;
+
+public class strings {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String s="I am learning core java";
+		String s1="Hello", s2="hello",s3;
+		//int l = s.length();
+		//System.out.println("Length =" + l);
+		//System.out.println(s1.compareTo(s2));
+		//System.out.println(s1.compareToIgnoreCase(s2));
+		int l = s.length();
+		int p=0,i=0,c=0;
+		while(p!=-1){
+		p=s.indexOf('a',i);
+		i=p+1;
+		c++;
+		}
+		System.out.println(c-1);
+		
+		
+		
+
+	}
+
+}

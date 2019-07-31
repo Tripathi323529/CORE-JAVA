@@ -1,0 +1,29 @@
+Name-Akash Tripathi
+Demo Assignment-primary
+===========================================================================================================================
+package Pri;
+
+public class primary {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int i, num, count=0;
+		for(num=1; num<=30 ; num++){
+			for(i=2;i<=num/2; i++){
+				if(num%i==0){
+					count++;
+					break;
+				}
+			}
+			if(count==0 && num!=1){
+				System.out.println(num);
+				
+			}
+		}
+
+	}
+
+}

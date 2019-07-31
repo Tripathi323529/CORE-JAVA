@@ -1,0 +1,27 @@
+Name-Akash Tripathi
+Print the below multiplication table.
+5 * 4 = 20
+6 * 6 = 36
+7 * 8 = 56
+8 * 10 = 80
+9 * 12 = 108
+===========================================================================================================================
+package Pri;
+
+public class multiplication {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("5*4=20");
+		System.out.println("6*6=36");
+		System.out.println("7*8=56");
+		System.out.println("8*10=80");
+		System.out.println("9*12=108");
+		
+
+	}
+
+}

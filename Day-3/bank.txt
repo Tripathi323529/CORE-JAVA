@@ -1,0 +1,50 @@
+Name-Akash Tripathi
+Demo Assignment-bank
+===========================================================================================================================
+package Poly;
+
+public class bank {
+	public float get_roi(){
+		return 0f;
+	}
+}
+----------------------------------------------------------------------------------------------------------------------------
+package Poly;
+
+public class citi extends bank {
+	public float get_roi(){
+		return 9.5f;
+	}
+
+}
+---------------------------------------------------------------------------------------------------------------------------
+package Poly;
+
+public class icici extends bank {
+	public float get_roi(){
+		return 8.5f;
+	}
+
+}
+---------------------------------------------------------------------------------------------------------------------------
+package Poly;
+
+public class test_bank {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		bank b;
+		
+		b= new icici();
+		System.out.println("ICICI Rate of interest :" + b.get_roi());
+		
+		b= new citi();
+		System.out.println("Citi Rate of interest :" + b.get_roi());
+		
+
+	}
+
+}

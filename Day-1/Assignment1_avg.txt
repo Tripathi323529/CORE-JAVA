@@ -1,0 +1,52 @@
+Name-Akash Tripathi
+Write a program to accept as input, marks in 4 subjects of each of the 3 students. 
+   Calculate the average of each student. Print the name & total marks of the student who scored highest average.
+===========================================================================================================================
+public class subjects {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input = new Scanner(System. in);
+		System.out.print("Enter the name: ");
+		String name = input.next();
+		String name1 = input.next();
+		String name2 = input.next();
+		System. out. print("Enter an integer: ");
+		int a = input. nextInt();
+		int b = input. nextInt();
+		int c = input. nextInt();
+		int d = input. nextInt();
+		int e = input. nextInt();
+		int f = input. nextInt();
+		int g = input. nextInt();
+		int h = input. nextInt();
+		int i = input. nextInt();
+		int j = input. nextInt();
+		int k = input. nextInt();
+		int l = input. nextInt();
+		float avg=(float)(a+b+c+d)/4;
+		float avg1=(float)(e+f+g+h)/4;
+		float avg2=(float)(i+j+k+l)/4;
+		if(avg>=avg1){
+			if(avg>=avg2){
+			System.out.println(name + " " + (a+b+c+d));
+		}
+			else{
+				System.out.println(name1 + " " +(e+f+g+h));
+			}
+		}
+		else {
+			System.out.println(name2 + " " + (i+j+k+l));
+			
+		}
+				
+			
+		
+		
+
+	}
+
+}

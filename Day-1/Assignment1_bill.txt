@@ -1,0 +1,43 @@
+Name-Akash Tripathi
+ W.A.P. to evaluate electricity bill on the following basis.
+• Upto 100 units Rs. 1.50
+• For the next 100 units Rs. 2.00
+• For next 50 units Rs. 2.50
+• Beyond 250 units Rs. 4.00
+===========================================================================================================================
+package Pri;
+import java. util. Scanner;
+public class Bill {
+
+	/**
+	 * @param args
+	 */
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input = new Scanner(System. in);
+		System. out. print("Enter an integer: ");
+		int bill = input. nextInt();
+		float sum=0;
+		if(bill<100){
+			sum= (float) (bill*1.5);
+			System.out.println(sum);
+			
+		}
+		if ( (100<= bill) && (bill<200)){
+			sum = (float) (100*1.5 + (bill-100)*2.00);
+			System.out.println(sum);
+		}
+		if((200<=bill) && (bill<250)){
+			sum= (float) (100*1.5 + 100*2.0 + (bill-200)*2.5);
+			System.out.println(sum);
+		}
+		if(250<=bill){
+			sum= (float) (100*1.5 + 100*2.0 + 50*2.50 + (bill-250)*4.0);
+			System.out.println(sum);
+		}
+		
+
+	}
+
+}

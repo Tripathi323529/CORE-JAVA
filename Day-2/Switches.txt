@@ -1,0 +1,40 @@
+Name-Akash Tripathi
+Demo Assignment-Switches
+===========================================================================================================================
+package Pri;
+
+import java.util.Scanner;
+
+public class Switches {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input = new Scanner(System. in);
+		System. out. print("Enter an integer: ");
+		
+	    int n = input. nextInt();
+	    switch(n){
+	    case 5:{
+	    	System.out.println("5");
+	    	break;
+	    }
+	    case 7:{
+	    	System.out.println("7");
+	    	break;
+	    }
+	    case 12:{
+	    	System.out.println("12");
+	    	break;
+	    }
+	    default:{
+	    	System.out.println("Default case");
+	    	break;
+	    }
+	    }
+
+	}
+
+}

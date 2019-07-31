@@ -1,0 +1,43 @@
+Name-Akash Tripathi
+Check if the entered number is amstrong number. 
+===========================================================================================================================
+package Pri;
+
+import java.util.Scanner;
+
+public class Armstrong {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input = new Scanner(System. in);
+		System. out. print("Enter an integer: ");
+		
+	    int n = input. nextInt();
+	    int count=0,o,s,remainder,result=0;
+	    o=n;
+	    s=n;
+		while(s!=0){
+			s/= 10;
+			count++;
+			
+		}
+		while (o != 0)
+        {
+            remainder = o % 10;
+            result += Math.pow(remainder, count);
+            o /= 10;
+        }
+
+		if(result==n){
+			System.out.println("This is armstrong number" + " " + n);
+		}
+		else{
+			System.out.println("This is not armstrong number");
+		}
+
+	}
+
+}
